@@ -1,5 +1,6 @@
 /**
 仿emmet语法的小脚本 by da宗熊
+version 1.0.0
 例子:
 	Emmet.compile("#parent > .child").toHtml() ==> <div id="parent"> <div class="child"></div> </div>
 */
@@ -8,8 +9,6 @@
 // 需要可配置默认的 tagName
 
 ;(function(window){
-	// es5语法:
-	// [].indexOf
 
 	// 全局默认标签
 	var DEFAULT_TAGNAME = "div";
