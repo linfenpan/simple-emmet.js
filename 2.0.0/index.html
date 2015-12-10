@@ -9,9 +9,9 @@
     <div id="inner"></div>
 </body>
 <script type="text/html" id="emmetTxt">
-    `{{each list}}`>(
-        p.item{`索引{{$index}}:`} > span.txt{`{{$value.name}}`}
-    )^`{{/each}}` + p{一段小尾巴}
+`{{each list}}`>(
+    p.li{`{{$index}}:{{$value.name}}`} > span.txt{`:{{$value.name}}`}
+)^`{{/each}}`+p{文字咯}
 </script>
 <script src="Emmet.js" charset="utf-8"></script>
 <script type="text/javascript">

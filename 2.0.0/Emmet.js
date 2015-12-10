@@ -188,7 +188,7 @@
             }
             return res.length > 0 ? {last: list.length <= 0 ? "" : res.pop(), text: res.join('')} : null;
         },
-        // data-name="da 宗熊",data-age=23 ---> {"data-name": "da宗熊", "data-age": 23}
+        // data-name="da 宗熊" data-age=23 ---> {"data-name": "da宗熊", "data-age": 23}
         str2Obj: function(str, split, eqSplit){
             var list = str.split(""), obj = {};
 
@@ -201,6 +201,7 @@
                 }else{
                     value = this.toKey(list, split);
                 }
+                this.toKey(list, split);
                 obj[key] = value;
             };
             return obj;
